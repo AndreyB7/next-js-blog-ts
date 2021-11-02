@@ -1,4 +1,5 @@
-import { CMS_NAME } from '../lib/constants'
+import { CMS_NAME } from "../lib/constants";
+import Link from "next/link";
 
 const Intro = () => {
   return (
@@ -7,18 +8,21 @@ const Intro = () => {
         Blog.
       </h1>
       <div className="text-xs text-green-500">updated with commit to main</div>
+      <nav>
+        <Link href="/about">Link to new About page</Link>
+      </nav>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A statically generated blog example using {' '}
+        A statically generated blog example using{" "}
         <a
           href="https://nextjs.org/"
           className="underline hover:text-success duration-200 transition-colors"
         >
           Next.js
-        </a>{' '}
+        </a>{" "}
         and {CMS_NAME}.
       </h4>
     </section>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
