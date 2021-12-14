@@ -7,9 +7,6 @@ const Intro = () => {
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Blog.
       </h1>
-      <nav>
-        <Link href="/about">Link to new About page</Link>
-      </nav>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A statically generated blog example using{" "}
         <a
